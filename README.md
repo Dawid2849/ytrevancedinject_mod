@@ -12,6 +12,10 @@ This package doesn't contain detach function like the orignal package did. Pleas
 - [Process Monitor Tools](https://github.com/HuskyDG/magic_proc_monitor) module with version 2.1+ (2.3 is recommended as it's the latest version and it supports [KSU](https://github.com/tiann/KernelSU))
 - normal YouTube already installed (version has to be the same as the one in this module)
 
+### Note
+
+If you are using KSU, please make sure that umount modules is DISABLED for YouTube in your KSU Manager.
+
 ### Credits
 
 - [HuskyDG](https://github.com/HuskyDG/) - original script for dynamic mount
