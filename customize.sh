@@ -2,8 +2,8 @@
 # Abort TWRP installation with error message when user tries to install this module in TWRP
 
 if [ $BOOTMODE = false ]; then
-	ui_print "- Installing through TWRP Not supported"
-	ui_print "- Intsall this module via your KSU/Magisk Manager"
+	ui_print "- Installing through TWRP is not supported"
+	ui_print "- Install this module via your APatch/KSU/Magisk Manager"
 	abort "- Aborting installation !!"
 fi
 api_level_arch_detect
