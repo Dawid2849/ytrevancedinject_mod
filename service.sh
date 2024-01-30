@@ -3,10 +3,8 @@ while [ "$(resetprop sys.boot_completed)" != 1 ]; do
 done
 sleep 1
 MODDIR="${0%/*}"
-MODNAME="${MODDIR##*/}"
-sh "$MODPATH/detachyt.sh"
-MAGISKTMP="$(magisk --path)" || MAGISKTMP=/sbin
-TMPFILE="$MAGISKTMP/.magisk/modules/$MODNAME/module.prop"
+MODNAME="${MODDIR##*/}"										   
+TMPFILE="/data/adb/modules/$MODNAME/module.prop"
 . "$MODDIR/utils.sh"
 [ -e "$MODDIR/loaded" ] || { check_version && . "$MODDIR/mount.sh"; } || exit 0
 

@@ -1,9 +1,8 @@
 MODDIR="${0%/*}"
 MODNAME="${MODDIR##*/}"
-MAGISKTMP="$(magisk --path)" || MAGISKTMP=/sbin
 
-PROPFILE="$MAGISKTMP/.magisk/modules/$MODNAME/module.prop"
-TMPFILE="$MAGISKTMP/revanced.prop"
+PROPFILE="/data/adb/modules/$MODNAME/module.prop"
+TMPFILE="/data/adb/modules/revanced.prop"
 cp -af "$MODDIR/module.prop" "$TMPFILE"
 
 sed -Ei 's/^description=(\[.*][[:space:]]*)?/description=[ ⛔ Module is not working. ] /g' "$TMPFILE"

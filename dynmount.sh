@@ -10,9 +10,9 @@ PROC="$4" # Process name. Example: com.google.android.gms.unstable
 USERID="$5" # USER ID of app
 # API_VERSION = 2
 # Enable ash standalone
-# Enviroment variables: MAGISKTMP, API_VERSION
+# Enviroment variables: API_VERSION
 
-TMPFILE="$MAGISKTMP/.magisk/modules/$MODNAME/module.prop"
+TMPFILE="/data/adb/modules/$MODNAME/module.prop"
 . "$MODDIR/utils.sh"
 
 RUN_SCRIPT(){
@@ -53,12 +53,6 @@ prepareEnterMntNs(){
 
 EnterMntNs(){
     # script run after enter the mount name space of app process and you allow this script to run in EnterMntNs stage
-
-    if [ "$PROC" == "com.android.vending" ]; then
-        . "$MODDIR/detachyt.sh"
-        exit 1
-    fi
-
     . "$MODDIR/mount.sh"
     exit 1
 }
