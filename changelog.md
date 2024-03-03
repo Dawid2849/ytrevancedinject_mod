@@ -1,3 +1,3 @@
-# 19.04.37
+# 19.04.37 (rebuild)
 
-Please update your YT to version 19.04.37 before updating this module
+Rebuilt using latest ReVanced patches (fixed history)
