@@ -1,3 +1,4 @@
-# 19.04.37 (rebuild)
+# 19.09.37 
 
-Rebuilt using latest ReVanced patches (fixed history)
+Updated YT to version 19.09.37
+Updated ReVanced Patches to 4.4.0
